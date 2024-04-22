@@ -14,6 +14,8 @@ def PyBdsf(FitsName:str,OutName:str):
         adaptive_rms_box=True    
     )
 
+    img.show_fit()
+
     #Creamos cada uno de los archivos fits y los juntamos en uno solo
     Images = ['ch0','island_mask','gaus_model','gaus_resid','rms']
     for image in Images:
@@ -49,7 +51,7 @@ def PyBdsf(FitsName:str,OutName:str):
     #Esto escribe el archivo prov.csv, de ahí seleccionamos las columnas que nos interesan
     #y las escribimos en otro archivo. Luego eliminamos el archivo prov y luego movemos todo
     #lo que creamos a una carpeta que se crea con el mismo nombre
-    usecols = ['# Gaus_id',' RA',' DEC',' Peak_flux',' E_Peak_flux']
+    usecols = [' Isl_id',' RA',' DEC',' Peak_flux',' E_Peak_flux']
     map_data = pd.read_csv('./prov.csv',usecols=usecols,skiprows=5)
     map_data.to_csv(OutName+'.csv')
 
@@ -63,6 +65,6 @@ def PyBdsf(FitsName:str,OutName:str):
     os.rename('./'+FitsName+'.fits.pybdsf.log','./'+OutName+'/'+FitsName+'.fits.pybdsf.log')
     os.rename('./prov.csv','./'+ OutName + '/prov.csv')
 
-PyBdsf('Const','ResConst')
+PyBdsf('MultDist1','Multi1')
 
 
