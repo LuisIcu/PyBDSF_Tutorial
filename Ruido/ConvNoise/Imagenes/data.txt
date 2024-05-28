@@ -1,0 +1,7 @@
+Parámetros para el ruido:
+$\sigma$ = 3.9719
+$\mu$ = 0.0629
+Parámetros para el ruido convolucionado:
+$\sigma$ = 0.5345
+$\mu$ = 0.0121
+La variación entre la desviación antes y después de la convolución es: 0.13457035675621237

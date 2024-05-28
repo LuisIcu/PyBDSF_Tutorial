@@ -1,0 +1,61 @@
+
+========================================================================
+Tue 28-05-2024 12:14:40:: INFO    : Processing MultSNR.fits
+Tue 28-05-2024 12:14:40:: INFO    : PyBDSF version 1.10.4.dev13+g9246686
+Tue 28-05-2024 12:14:40:: INFO    : Non-default input parameters:
+                                        adaptive_rms_box     = True
+                                        beam                 = (0.00139, 0.00139, 0.0)
+                                        filename             = 'MultSNR.fits'
+                                        frequency            = 272000000000.0
+Tue 28-05-2024 12:14:40:: USERINFO: --> Opened 'MultSNR.fits'
+Tue 28-05-2024 12:14:40:: INFO    : Original data shape of MultSNR.fits: (25, 375)
+Tue 28-05-2024 12:14:40:: INFO    : Final data shape (npol, nchan, x, y): (1, 1, 375, 25)
+Tue 28-05-2024 12:14:40:: USERINFO: Image size .............................. : (375, 25) pixels
+Tue 28-05-2024 12:14:40:: USERINFO: Number of channels ...................... : 1
+Tue 28-05-2024 12:14:40:: USERINFO: Number of Stokes parameters ............. : 1
+Tue 28-05-2024 12:14:40:: USERINFO: Beam shape (major, minor, pos angle) .... : (1.39000e-03, 1.39000e-03, 0.0) degrees
+Tue 28-05-2024 12:14:40:: INFO    : Using user-specified frequency.
+Tue 28-05-2024 12:14:40:: INFO    : Equinox not found in image header. Assuming J2000.
+Tue 28-05-2024 12:14:40:: USERINFO: Frequency of image ...................... : 272000.000 MHz
+Tue 28-05-2024 12:14:40:: USERINFO: Number of blank pixels .................. : 0 (0.0%)
+Tue 28-05-2024 12:14:40:: INFO    : Raw mean (Stokes I) =  366.6022 mJy and raw rms =  1653.6704 mJy 
+Tue 28-05-2024 12:14:40:: INFO    : sigma clipped mean (Stokes I) =  39.9664 mJy and  sigma clipped rms =  1089.8783 mJy 
+Tue 28-05-2024 12:14:40:: USERINFO: Flux from sum of (non-blank) pixels ..... : 121.133 Jy
+Tue 28-05-2024 12:14:40:: INFO    : Estimated bmpersrc_th =   34.72
+Tue 28-05-2024 12:14:40:: INFO    : Parameter confused is False
+Tue 28-05-2024 12:14:40:: USERINFO: --> Calculating background rms and mean images
+Tue 28-05-2024 12:14:40:: INFO    : Estimated size of brightest source (pixels) = 4
+Tue 28-05-2024 12:14:40:: USERINFO: --> Using adaptive scaling of rms_box
+Tue 28-05-2024 12:14:40:: INFO    : Maximum extent of largest 10-sigma island using clipped rms (pixels) = 4
+Tue 28-05-2024 12:14:40:: USERINFO: Derived rms_box (box size, step size) ... : (19, 2) pixels (small scale)
+Tue 28-05-2024 12:14:40:: USERINFO: Derived rms_box (box size, step size) ... : (21, 2) pixels (large scale)
+Tue 28-05-2024 12:14:40:: USERINFO: --> Size of rms_box larger than 1/4 of image size
+Tue 28-05-2024 12:14:40:: USERINFO: --> Using constant background rms and mean
+Tue 28-05-2024 12:14:40:: USERINFO: Value of background rms ................. : 1.09e+00 Jy/beam
+Tue 28-05-2024 12:14:40:: USERINFO: Value of background mean ................ : 0.03997 Jy/beam
+Tue 28-05-2024 12:14:40:: USERINFO: --> Expected 5-sigma-clipped false detection rate > fdr_ratio
+Tue 28-05-2024 12:14:40:: USERINFO: --> Using FDR (False Detection Rate) thresholding
+Tue 28-05-2024 12:14:40:: USERINFO: FDR threshold (replaces thresh_pix) ..... : 2.2297
+Tue 28-05-2024 12:14:40:: USERINFO: Minimum number of pixels per island ..... : 9
+Tue 28-05-2024 12:14:40:: USERINFO: Number of islands found ................. : 11
+Tue 28-05-2024 12:14:40:: USERINFO: Total number of Gaussians fit to image .. : 11
+Tue 28-05-2024 12:14:40:: USERINFO: Total flux density in model ............. : 131.285 Jy
+Tue 28-05-2024 12:14:40:: USERINFO: --> Grouping Gaussians into sources
+Tue 28-05-2024 12:14:40:: USERINFO: Number of sources formed from Gaussians   : 11
+Tue 28-05-2024 12:14:40:: INFO    : Calculating residual image after subtracting reconstructed gaussians
+Tue 28-05-2024 12:14:40:: INFO    : Statistics of the Gaussian residual image:
+                                            mean: -3.070e-02 (Jy/beam)
+                                        std. dev: 1.042e+00 (Jy/beam)
+                                            skew: 0.096
+                                        kurtosis: 0.255
+Tue 28-05-2024 12:14:41:: INFO    : Internally derived parameters:
+                                        bmpersrc_th          : 34.72222222222222
+                                        indir                : './'
+                                        maxpix_isl           : inf
+                                        minpix_isl           : 9
+                                        outdir               : '/home/pdmartinez/Documentos/PyBDSF_Tutorial'
+                                        rms_box              : (21, 2)
+                                        rms_box_bright       : (19, 2)
+                                        thresh               : 'fdr'
+                                        thresh_pix           : 2.2297004475958646
+Tue 28-05-2024 12:14:41:: INFO    : Writing prov.csv

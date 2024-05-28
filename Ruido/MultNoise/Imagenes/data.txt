@@ -1,0 +1,7 @@
+Parámetros para el ruido:
+$\sigma$ = 1.0057
+$\mu$ = 0.0007
+Parámetros para el ruido de la matriz convolucionada:
+$\sigma$ = 0.3564
+$\mu$ = 0.0529
+La variación entre la desviación antes y después de la multiplicación es: 0.3543800338072984

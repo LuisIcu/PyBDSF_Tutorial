@@ -27,14 +27,15 @@
 # de salida se genera un error y no ejecuta nada.
 #
 # Al ejecutar en la terminal se ve así:
-# python3 PyBdsf.py
-# Ingresar nombre del fits: NombreEntrada
-# Ingresar nombre de salida: NombreSalida
+# python3 PyBdsf.py NombreEntrada NombreSalida
 
 import bdsf
 import pandas as pd
 import os 
 from astropy.io import fits
+import sys
+
+
 
 def PyBdsf(FitsName:str,OutName:str):
     os.mkdir('./'+OutName)
@@ -44,7 +45,7 @@ def PyBdsf(FitsName:str,OutName:str):
     img = bdsf.process_image(
         filename,
         frequency=2.72e11,
-        beam=(0.0016,0.0016,0),
+        beam=(0.00139,0.00139,0),
         adaptive_rms_box=True    
     )
 
@@ -100,8 +101,8 @@ def PyBdsf(FitsName:str,OutName:str):
 
 
 
-FitsName = input('Ingresar nombre del fits: ')
-OutName = input('Ingresar nombre de salida: ')
+FitsName = sys.argv[1]
+OutName = sys.argv[2]
 
 #PyBdsf('MultDist1','Multi1')
 PyBdsf(FitsName,OutName)
